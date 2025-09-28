@@ -6,7 +6,7 @@ import userController from "../controller/userController.js";
 
 const router = express.Router();
 
-router.post('/users', userController.addUsers); 
+router.post('/addUsers', userController.addUsers); 
 router.get('/getUsers', userController.getAllUsers);
 router.get('/getUsers/:id', userController.getUserById); 
 router.put('/updateUser/:id', userController.updateUser);
